@@ -7,25 +7,78 @@
 function blabla(aa){if (aa=="Imola") {alert("Hello!"); document.getElementById("cim").innerHTML = "Imola cime"; }else alert("Szia " + aa + "!");}
 </script>
 <style>
-h2{ color: blue;
+h1{ color: #440154FF;text-align:center;
+}
+h2{ color: #3D4D8AFF;
+}
+h3{ margin: 30px;
+}
+ol{ margin: 50px;
+}
+p{ text-align: justify;margin: 30px;
 }
 .szemely { margin: 30px; }
 </style>
 </head>
 <body>
-
-<h1 id="cim" style="color: red;">Data Analysis: Patterns, Prediction and Causality <br>
+<!--this first h1 part is the "Home" index.html -->
+<h1 id="cim" style="color: #440154FF;text-align:center">Data Analysis: Patterns, Prediction and Causality <br>
 <i> <font size="6"> A graduate textbook for Business, Economics and Policy </font> </i></h1>
-<p>Data Analysis: Exploration, Patterns, Prediction and Causality is a textbook aimed primarily at business, applied economics and public policy students. It may be taught at MBA, MA Economics (non-PhD track), MSc in Business Economics/Management, MA in Public Policy, PhD in Management and comparable programs. It also a natural fit in Business Analytics graduate programs. </p>
+<br>
+<h2>Short description</h2>
+<p><strong>Data Analysis: Exploration, Patterns, Prediction and Causality</strong> is a textbook aimed primarily at business, applied economics and public policy students. It may be taught at MBA, MA Economics (non-PhD track), MSc in Business Economics/Management, MA in Public Policy, PhD in Management and comparable programs. It also a natural fit in Business Analytics graduate programs. This textbook provides integrated knowledge of methods traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. It covers data organization, data description, regression analysis, predictive analytics using regression and machine learning tools, causal analysis of the effects of interventions by doing experiments or using observational data, and practical skills for working with real-life data and collecting data. The textbook covers relatively few methods but helps students gain a a lot of practice and a deep intuitive understanding of those methods. We put a lot of emphasis on the interpretation and visualization of results.</p>
+<h2> Authors</h2>
+<p>
+<a href="https://sites.google.com/site/bekesg/Home" target="_blank">Gábor Békés (CEU)</a>
+<br>
+Gábor Kézdi (U. Michigan) </p>
+<!--képekkel mint itt: http://web.stanford.edu/~hastie/CASI/index.html -->
+<h2>A bit more info</h2>
+<!--könyvborítóról kép -->
+<p>Data Analysis: Patterns, Prediction and Causality by Gábor Békés (Central European University and CEPR) and Gábor Kézdi (University of Michigan and ISR) is now forthcoming with Cambridge University Press (in 2020). The textbook material may be fully covered in a year-long course (for example, in the first year of a two-year Master programs or PhD programs) It covers material for a series of courses or modules, and chapters may be used to assemble programs of various lengths.</p>
+<p>Our textbook covers integrated knowledge of methods and tools traditionally scattered around various fields such as econometrics, machine learning and practical business statistics. Our sections in the book are:</p>
+<ol type="I">
+   <li> DATA EXPLORATION</li>
+   <li> PATTERNS: REGRESSION ANALYSIS</li>
+   <li> PREDICTION</li>
+   <li> CAUSALITY: THE EFFECTS OF INTERVENTIONS</li>
+</ol>
+<p>State-of-the art knowledge in data analysis includes traditional regression analysis, causal analysis of the effects of interventions, predictive analytics using regression and machine learning tools, and practical skills for working with real-life data and collecting data. We cover relatively few methods but help students gain a deep intuitive understanding. The upside is that visualization and interpretation of results may become the focus of analysis.</p>
+<p>Applied knowledge can be acquired only by working through many applications. Students will use real-life data; learn how to manage analytical projects from scratch as we provide data and code as part of an online ancillary platform. The textbook supports both R and Stata. The textbook is complemented with extensive online material including data, code, additional case studies, practice questions, sample exams and data exercises.</p>
+<h2>Why is this textbook different?</h2>
+
+<p>The most important features of this textbook that we think make it attractive - and different from other textbooks - are as follows.
+
+    It covers the most important methods and tools used in data exploration, predictive analytics and causal analysis.
+    It covers relatively few methods but help students gain a working knowledge and deep intuitive understanding of each method.
+    It includes very few formulae and relegates derivations and proofs to appendices or outside resources.
+    It gives advice on what method to use when, acknowledging that there is usually no single best solution but data analysts need to make many conscientious decisions.
+    It focuses on real-life applications to prepare students to carry out data analysis on their own.
+    It explains how to start working with data, including advice on organizing, exploring and describing data.
+    It includes many applications that start with raw data  so students gain experience in working from scratch.
+    Its companion website includes data and code that reproduce all tables and graphs in the textbook. All code is provided both in R and Stata.
+    It includes topics of important in practice, such as data quality, methods of data collection, doing experiments.
+
+</p>
+<h2>What's more</h2>
+<h3>Case studies</h3>
+<p>We will provide additional case studies that allow for studying the entire process of data analysis from the substantive business or policy question through collecting or accessing data, managing and cleaning data, carrying out the analysis, presenting and interpreting its results, and addressing the original substantive questions. Case studies aim at answering a question rather than simply illustrating a method.  We selected case studies with a potential appeal to a wide range of students. The topics cover management, consumer choice, labor markets, health, energy, macroeconomic and social policy. </p>
+<h3>Focus on data visualization</h3>
+<p>Understanding patterns in data is greatly helped by data visualization. We present a comprehensive take on how to build graphs using a few layers. For many types of graphs, we offer shorter sections on how best show a relationship illustrated by graphs used in case studies.</p>
+<h3>Big data</h3> 
+<p>Big Data presents opportunities to better answer old questions and ask new questions. It offers great advantages when applying many traditional statistical methods and allows for developing new methods. At the same time analyzing Big Data presents new challenges, too. We include explicit discussion of these opportunities and challenges in relation to uncovering and generalizing patterns, learning the effects of interventions and carrying out predictions, within each of the sections of the book.</p>
+<!--a "Key topics" menjen külön oldalra (akár "Content" néven), meg az "Errata","Data", "How to order" -->
+<h1> Key topics </h1>
 <h2>I. Data Exploration</h2>
 <p class="szemely">Real data needs cleaning and restructuring before it can be analyzed. The decisions during that process may have far-reaching consequences for the results of the analysis. Yet they are rarely discussed in standard statistics, econometrics and machine learning texts. Even after extensive cleaning the data used in the analysis is typically different from the ideal dataset that would serve the analysis best. Analysts need to have a thorough understanding of those differences to interpret their results in appropriate ways. The examples used in our course help students acquire the tools of data management and data cleaning and track the consequences of data cleaning on the results of their analysis. Furthermore, similar issues are addressed when analysts collect their own data or influence data collection in some ways.
+<br>Chapters:
 <ol>
-  <li>Origins of data (data table, data quality, survey, scraping, sampling, ethics)</li>
-  <li>Preparing data for analysis (tidy data, source of variation, variable types, missing data, data cleaning)</li>
-  <li>Exploratory data analysis (probability, distributions, extreme values, summary stats, layers of data visualization)</li>
-  <li>Comparison and correlation (conditional probability, conditional distribution, conditional expectation, visual comparisons, correlation, good graphs and tables)</li>
-  <li>Generalizing from a dataset (repeated samples, confidence interval, standard error estimation via bootstrap and formula, external validity)</li>
-  <li>Testing hypotheses (null and alternative hypotheses, t-test, false positives / false negatives, p-value, testing multiple hypotheses)</li>
+  <li><strong>Origins of data</strong> (data table, data quality, survey, scraping, sampling, ethics)</li>
+  <li><strong>Preparing data for analysis</strong> (tidy data, source of variation, variable types, missing data, data cleaning)</li>
+  <li><strong>Exploratory data analysis</strong> (probability, distributions, extreme values, summary stats, layers of data visualization)</li>
+  <li><strong>Comparison and correlation</strong> (conditional probability, conditional distribution, conditional expectation, visual comparisons, correlation, good graphs and tables)</li>
+  <li><strong>Generalizing from a dataset</strong> (repeated samples, confidence interval, standard error estimation via bootstrap and formula, external validity)</li>
+  <li><strong>Testing hypotheses</strong> (null and alternative hypotheses, t-test, false positives / false negatives, p-value, testing multiple hypotheses)</li>
 </ol>
 </p>
 
@@ -40,6 +93,19 @@ h2{ color: blue;
 <br>
 <!--This download instruction stems from the Wooldridge data website: https://www.cengage.com/cgi-wadsworth/course_products_wp.pl?fid=M20b&product_isbn_issn=9781111531041 -->
 <p>Clicking on the above link(s) will either start the download process or open the file depending on your browser. If you wish to only download the file, right-click and select your browser's "Save as..." option. </p> 
+
+
+<h2>II. Patterns: regression analysis</h2>
+<p class="szemely">Uncovering patterns in the data can be an important goal in itself, and it is the prerequisite to establishing cause and effect and carrying out predictions. The course starts with simple regression analysis, the method that compares expected y for different values of x to learn the patterns of association between the two variables. It discusses nonparametric regressions and focuses on the linear regression. It builds on simple linear regression and goes on to enriching it with nonlinear functional forms, generalizing from a particular dataset to other data it represents, adding more explanatory variables, etc. The course also covers regression analysis for time series data, panel data, binary dependent variables, as well as nonlinear models such as logit and probit. Understanding the intuition behind the methods, their applicability in various situations, and the correct interpretation of their results are the constant focus of the course.</p>
+<h2>III. Prediction</h2>
+<p class="szemely">Data analysis in business and policy applications is often aimed at prediction. The course introduces tools to evaluate predictions, such as loss functions or the Brier score. It emphasizes the importance of out-of-sample prediction, the role of stationarity, the dangers of overfitting and the use of training and testing samples and cross-validation. It presents and compares the most important predictive models that may be useful in various situations such as time series regressions, classification tools and tree-based machine learning methods. </p>
+<h2>IV. Causality: learning the effects of interventions</h2>
+<p class="szemely">Decisions in business and policy are often centered on specific interventions, such as changing monetary policy, modifying health care financing, changing the price or other attributes of products, or changing the media mix in marketing. Learning the effects of such interventions is an important purpose of data analysis. The course incorporates the basic concepts and methods used by program evaluation (the framework of potential outcomes, the benefits of randomized assignment, etc.). It also covers related methods used in business, such as A/B testing. </p>
+
+<h1> Errata</h1>
+<p> If you experience any discrepancies, please feel free to contact us via <i>data.analyis.textbook@gmail.com</i>. Comments are warmly welcome.
+ </p>
+
 <p>Just for HTML, function, css code practice:</p>
 <br>
 <button onclick="blabla('Kep')"><img src="py.png" alt="Pythonos kep" width="50" height="50"></button>
@@ -49,19 +115,6 @@ h2{ color: blue;
 <button class="szemely"  onclick="blabla('Mate')">Mate</button>
 <button onclick="blabla('Mate')">Szek</button>
 <i>jhgjhgjhgghj</i>
-
-<h2>II. Patterns: regression analysis</h2>
-<p class="szemely">Uncovering patterns in the data can be an important goal in itself, and it is the prerequisite to establishing cause and effect and carrying out predictions. The course starts with simple regression analysis, the method that compares expected y for different values of x to learn the patterns of association between the two variables. It discusses nonparametric regressions and focuses on the linear regression. It builds on simple linear regression and goes on to enriching it with nonlinear functional forms, generalizing from a particular dataset to other data it represents, adding more explanatory variables, etc. The course also covers regression analysis for time series data, panel data, binary dependent variables, as well as nonlinear models such as logit and probit. Understanding the intuition behind the methods, their applicability in various situations, and the correct interpretation of their results are the constant focus of the course.</p>
-<h2>III. Prediction</h2>
-<p class="szemely">Data analysis in business and policy applications is often aimed at prediction. The course introduces tools to evaluate predictions, such as loss functions or the Brier score. It emphasizes the importance of out-of-sample prediction, the role of stationarity, the dangers of overfitting and the use of training and testing samples and cross-validation. It presents and compares the most important predictive models that may be useful in various situations such as time series regressions, classification tools and tree-based machine learning methods. </p>
-<h2>IV. Causality: learning the effects of interventions</h2>
-<p class="szemely">Decisions in business and policy are often centered on specific interventions, such as changing monetary policy, modifying health care financing, changing the price or other attributes of products, or changing the media mix in marketing. Learning the effects of such interventions is an important purpose of data analysis. The course incorporates the basic concepts and methods used by program evaluation (the framework of potential outcomes, the benefits of randomized assignment, etc.). It also covers related methods used in business, such as A/B testing. </p>
-<p> Authors </p>
-<a href="https://sites.google.com/site/bekesg/Home" target="_blank">Gábor Békés (CEU)</a>
-<p> Gábor Kézdi (U. Michigan) </p>
-<p> Errata
-<br> If you experience any discrepancies, please feel free to contact us via <i>data.analyis.textbook@gmail.com</i>. Comments are warmly welcome.
- </p>
 </body>
 </html>
 
